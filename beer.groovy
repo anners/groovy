@@ -8,11 +8,12 @@ for (i in taplist) { println i }
 
 def beer = System.console().readLine("What would you like to drink? ")
 
-println "Here is your $beer"
+if ( taplist.contains(beer) ) {
+//print price
+	println "Here is your $beer"
+} else {
+//make taplist print a method
+	println "Sorry we only don't have your beer"
+} 
 
-/*
-this.args.each {
-	arg -> println "hi, ${arg}!" 
-}
-*/
 
